@@ -89,3 +89,15 @@ button {
 button:hover {
   background-color: #ffe066;
 }
+
+.icon-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.icon-img:hover {
+  transform: scale(1.1);
+}
