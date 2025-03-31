@@ -1,0 +1,43 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: url('https://images.unsplash.com/photo-1587329310686-8814bfb56a7c') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+input, button {
+  padding: 0.7rem;
+  margin: 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  background-color: #ffcc00;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ffe066;
+}
+
+#countdown {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
