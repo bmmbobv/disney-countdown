@@ -1,7 +1,7 @@
 /* === Waltograph Disney Font === */
 @font-face {
   font-family: 'Waltograph';
-  src: url('WaltographUI.ttf') format('truetype');
+  src: url('fonts/WaltographUI.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -9,12 +9,13 @@
 /* === General Page Styling === */
 body {
   font-family: 'Waltograph', cursive;
-  background: url('bg2.jpg') no-repeat center center fixed;
+  background: url('https://images.unsplash.com/photo-1587329310686-8814bfb56a7c') no-repeat center center fixed;
   background-size: cover;
   color: white;
   text-align: center;
   margin: 0;
   padding: 2rem;
+  font-size: 1.8rem; /* 🔥 GLOBAL font boost */
 }
 
 /* Optional dark overlay for readability */
@@ -29,4 +30,62 @@ body::before {
 
 /* === Countdown Container === */
 .container {
-  background-color: rgba(0, 0, 0, 0.
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 3rem;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+/* === Countdown Ticker === */
+#countdown {
+  margin-top: 2rem;
+  font-size: 3rem;
+  color: #ffcc00;
+  text-shadow: 2px 2px 15px #000;
+}
+
+/* === Ticker Text === */
+#timer {
+  font-size: 4rem; /* 🧨 HUGE countdown numbers */
+  font-weight: normal;
+  color: #ffcc00;
+  text-shadow: 3px 3px 15px #000;
+  margin-top: 2rem;
+}
+
+/* === Headings === */
+h1 {
+  font-size: 4rem;
+  color: #ffffff;
+  text-shadow: 3px 3px 10px #000;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px #000;
+}
+
+/* === Buttons and Inputs (in case you bring them back) === */
+input, button {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  border: none;
+  font-family: 'Waltograph', cursive;
+}
+
+button {
+  background-color: #ffcc00;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ffe066;
+}
