@@ -19,6 +19,6 @@ function startCountdown(vacationDate) {
   }, 1000);
 }
 
-// Set the fixed vacation date here
-const vacationDate = new Date("May 8, 2025 00:00:00");
+// 👇 THIS is your hardcoded date: May 8, 2025 at midnight
+const vacationDate = new Date("2025-05-08T00:00:00");
 startCountdown(vacationDate);
