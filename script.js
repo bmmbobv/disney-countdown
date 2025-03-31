@@ -1,22 +1,5 @@
-let countdownInterval;
-
-document.getElementById('startCountdown').addEventListener('click', () => {
-  const dateInput = document.getElementById('vacationDate').value;
-  const vacationDate = new Date(dateInput);
-
-  if (!dateInput || isNaN(vacationDate)) {
-    alert("Please select a valid date.");
-    return;
-  }
-
-  localStorage.setItem("vacationDate", dateInput);
-  startCountdown(vacationDate);
-});
-
 function startCountdown(vacationDate) {
-  clearInterval(countdownInterval);
-
-  countdownInterval = setInterval(() => {
+  const countdownInterval = setInterval(() => {
     const now = new Date();
     const diff = vacationDate - now;
 
@@ -36,12 +19,6 @@ function startCountdown(vacationDate) {
   }, 1000);
 }
 
-// Auto-start countdown if a date was previously saved
-window.addEventListener('DOMContentLoaded', () => {
-  const savedDate = localStorage.getItem("vacationDate");
-  if (savedDate) {
-    document.getElementById('vacationDate').value = savedDate;
-    startCountdown(new Date(savedDate));
-  }
-});
-
+// Set the fixed vacation date here
+const vacationDate = new Date("May 8, 2025 00:00:00");
+startCountdown(vacationDate);
