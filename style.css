@@ -101,3 +101,21 @@ button:hover {
 .icon-img:hover {
   transform: scale(1.1);
 }
+
+.button-link {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 1.5rem auto;
+  background-color: #ffcc00;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 15px;
+  font-family: 'Waltograph', cursive;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: #ffe066;
+}
